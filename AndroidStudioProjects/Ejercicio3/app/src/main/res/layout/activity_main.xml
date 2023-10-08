@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBFFE4"
+    tools:context=".MainActivity">
+    <!-- Se ha cambiado el color de la pantalla -->
+
+    <RadioGroup
+        android:id="@+id/GroupID"
+        android:layout_width="92dp"
+        android:layout_height="143dp"
+        android:background="#FCFFA7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998">
+        <!-- Se ha cambiado el color de fondo de las opciones -->
+
+        <RadioButton
+            android:id="@+id/Tennis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tennis"
+            android:textColor="#230051"
+            android:textColorLink="#1E32A1"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="183dp" />
+            <!-- Se ha cambiado el color del texto y del circulo al dar click -->
+
+        <RadioButton
+            android:id="@+id/Soccer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soccer"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="183dp" />
+
+        <RadioButton
+            android:id="@+id/Golf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Golf"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="183dp" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

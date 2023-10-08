@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FD19999"
+    tools:context=".MainActivity">
+    <!-- Se ha cambiado el color del fondo -->
+
+    <TextView
+        android:id="@+id/textv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FB9494"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+        <!-- Se ha movido el texto para que este a la vista del usuario, ademas que se ha puesto un color de fondo -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="158dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#F84CFD"
+        android:text="Button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88"
+        tools:ignore="HardcodedText" />
+        <!-- Se ha cambiado el color de fondo del boton, y tambien se ha hecho mas grande el texto -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

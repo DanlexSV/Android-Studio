@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0DAE7"
+    tools:context=".MainActivity">
+    <!-- Cambiamos el color del fondo con el background al color #C0DAE7-->
+
+    <LinearLayout
+        android:layout_width="255dp"
+        android:layout_height="100dp"
+        android:background="#FFEB3B"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002">
+        <!-- Insertamos un color de fondo usando el background al color #FFEB3B -->
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FF5722"
+            android:text="Button"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+            <!-- Se agrega margen al boton para separarlo del otro y
+            direccionarlo, ademas se cambio el color de fondo al #FF5722-->
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Button"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+            <!-- Se agrega un poco de margen a la izquierda para que no se
+            junte con el otro boton, tambien hemos cambiado el tamaño del texto -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="176dp"
+        android:layout_height="255dp"
+        android:background="#CCDC37"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36">
+        <!-- Agregamos un Layout vertical al cual cambiamos el color de fondo -->
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp"
+            android:text="Button"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+            <!-- Agregamos margen al boton para mejorar el aspecto del mismo y
+            evitar que este muy pegado al otro boton -->
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Button"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="70dp"
+            android:paddingTop="30dp"
+            android:text="Button"
+            android:textColor="#FF9800"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+            <!-- Cambiamos el layout_height para que sea "match" de esta
+            manera el boton cubre el layout, tambien hemos cambiado el
+            tamaño del texto a uno mas grande -->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="149dp"
+        android:layout_height="68dp"
+        android:backgroundTint="#9E302F"
+        android:text="Button"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84000003"
+        tools:ignore="HardcodedText" />
+    <!-- Cambiamos el color del boton al #9E302F,
+    tambien hemos cambiado el tamaño del texto a uno mas grande -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
